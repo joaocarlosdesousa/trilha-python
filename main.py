@@ -1,12 +1,23 @@
-# Treino de Variáveis, Inputs e Estruturas de Decisão (if/else) 
+# Degrau 1: Praticando Loops (while/for) e Listas
 
-nome = input("Digite seu nome :")
+tarefas = []
 
-linguagem = input("Qual linguagem você está vendo?")
+while True  :
 
-print(f"\nOlá, {nome}! Você está no Degrau 1 da sua jornada.")
+    materias = input("Digite a disciplia para adicionar à lista (para sair digite 'sair')\n")
 
-if linguagem.lower() == "python":
-    print("Excelente escolha! Python é fundamental para Backend, Automação e IA.")
-else:
-    print(f"Muito legal aprender {linguagem}! Mas continue firme no Python para fechar o Degrau 1.")
+    if materias.lower() == 'sair':
+         break
+    
+
+    tarefas.append(materias)
+    print(f"\n{materias} adicionado à lista\n")
+
+
+
+print("---LISTA DE MATÉRIAS---\n")
+
+for index, materia in enumerate(tarefas, 1):
+  print(f"{index}. {materia}\n")
+
+print(f"\n Total de matérias cadastradas: {len(tarefas)}")
