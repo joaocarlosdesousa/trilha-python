@@ -1,4 +1,12 @@
-nome = "João"
-linguagem = "Python"
+# Treino de Variáveis, Inputs e Estruturas de Decisão (if/else) 
 
-print(f"Bora dominar o Degrau 1! Desenvolvendo em {linguagem} com {nome}.")
+nome = input("Digite seu nome :")
+
+linguagem = input("Qual linguagem você está vendo?")
+
+print(f"\nOlá, {nome}! Você está no Degrau 1 da sua jornada.")
+
+if linguagem.lower() == "python":
+    print("Excelente escolha! Python é fundamental para Backend, Automação e IA.")
+else:
+    print(f"Muito legal aprender {linguagem}! Mas continue firme no Python para fechar o Degrau 1.")
