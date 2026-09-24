@@ -1,12 +1,23 @@
 
 faculdade = {
 
-    "nome" : "João",
-    "curso" : "Ciência da Computação",
-    "nota_poc" : "8,5"
+    "nome": "João",
+    "curso": "Ciência da Computação",
+    "semestre": 2
 }
 
-faculdade["semestre"] = 2
-faculdade["nota_poc"] = 10
+faculdade.pop("semestre")
 
-print(f"\nO aluno {faculdade['nome']} do curso da {faculdade['curso']} teve a nota da POC atualizada para {faculdade['nota_poc']}\n")
+print("Chaves que restaram:\n", list(faculdade.keys()))
+
+aluno2 = {
+
+    "nome": "Maria",
+    "curso": "Design"
+}
+
+turma = [faculdade, aluno2]
+
+
+for facu in turma:
+    print(f"Nome:  Curso:\n {facu['nome']}   {facu['curso']}\n")
